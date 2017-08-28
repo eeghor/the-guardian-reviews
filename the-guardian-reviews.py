@@ -46,7 +46,7 @@ print("last available page is {}".format(last_page))
 album_review_urls.update(collect_review_urls())
 
 # all pages but the first one have URLs like https://www.theguardian.com/music+tone/albumreview?page=2
-for i in range(980, last_page + 1):
+for i in range(2, last_page + 1):
 
     driver.get(BASE_PAGE + "/?page=" + str(i))
 
